@@ -1,4 +1,4 @@
-# ActioSys Employee Registration
+# ActionSys Employee Registration
 
 ## Important Links
 
