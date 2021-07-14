@@ -10,11 +10,11 @@ function NovoFuncionario() {
 
   async function handleFileUpload(file) {
     try {
-      console.log(file);
+      
       const uploadData = new FormData();
       uploadData.append("image", file);
       const response = await api.post("/image-upload", uploadData);
-      console.log(uploadData);
+      
       return response.data.fileUrl;
     } catch (err) {
       console.error(err);
@@ -36,23 +36,23 @@ function NovoFuncionario() {
       validationSchema={NovoFuncionarioSchema}
       onSubmit={async (values, { setSubmitting }) => {
         setSubmitting(true);
-         console.log(values)       
+               
         try {
           
           let uploadedImageUrl = "";
           if (values.image) {
             uploadedImageUrl = await handleFileUpload(values.image);
           }
-          console.log(uploadedImageUrl)
-          const response = await api.post("/funcionario", {
+          
+          await api.post("/funcionario", {
             ...values,
             image_url: uploadedImageUrl,
             image: "",
           });
 
           setSubmitting(false);
-          console.log(response);
-          //history.push("/");
+          
+          history.push("/");
         } catch (err) {
           console.error(err);
           setSubmitting(false);

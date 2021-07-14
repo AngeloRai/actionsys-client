@@ -13,7 +13,7 @@ function ListarUmFuncionario() {
     async function buscarFuncionarios() {
       try {
         const response = await api.get(`/funcionario/${id}`);
-        console.log(response.data);
+        
         setFuncionario(response.data);
       } catch (err) {
         console.error(err);
@@ -21,8 +21,7 @@ function ListarUmFuncionario() {
     }
     buscarFuncionarios();
   }, [id]);
-
-  console.log(funcionario);
+  
   return (
     <div className="m-4 ">
       {funcionario && (

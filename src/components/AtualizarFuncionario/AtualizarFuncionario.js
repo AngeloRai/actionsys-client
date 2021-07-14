@@ -35,8 +35,7 @@ function AtualizarFuncionario(props) {
     }
     buscarFuncionario();
   }, [id]);
-
-  console.log(state);
+  
   return (
     <div>
       <Formik

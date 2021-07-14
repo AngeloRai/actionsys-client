@@ -20,8 +20,7 @@ function ListarFuncionarios() {
     }
     buscarFuncionarios();
   }, []);
-  console.log(funcionarios);
-
+  
   useEffect(() => {
     async function buscarFuncionarios() {
       try {
