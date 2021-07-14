@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const apis = {
   development: 'http://localhost:4000',
-  production: 'https://.herokuapp.com'
+  production: 'https://actionsys.herokuapp.com/'
 }
 
 // Configura axios para receber url base automaticamente, evitando repetição nas requisições.
