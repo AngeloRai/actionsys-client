@@ -1,3 +1,13 @@
+# ActionSys Employee Registration
+
+## Important Links
+
+### [Demo site]()
+
+### [Client repository](https://github.com/AngeloRai/actionsys-client)
+
+### [Server repository](https://github.com/AngeloRai/actionsys-server)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
