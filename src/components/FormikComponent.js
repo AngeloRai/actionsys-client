@@ -8,14 +8,14 @@ function FormikComponent(props) {
     <div>
       <Formik
         initialValues={{
-          nome: props.state.nome,
-          email: props.state.email,
-          setor: props.state.setor,
-          cargo: props.state.cargo,
-          nivel: props.state.nivel,
-          data_admissao: props.state.data_admissao,
-          data_nascimento: props.state.data_nascimento,
-          image_url: props.state.image_url
+          nome: "",
+          email: "",
+          setor: "",
+          cargo: "",
+          nivel: "",
+          data_admissao: "",
+          data_nascimento: "",
+          image: "",
         }}
         validationSchema={NovoFuncionarioSchema}
         onSubmit={async (values, { setSubmitting }) => {
