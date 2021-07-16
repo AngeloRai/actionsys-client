@@ -62,7 +62,7 @@ function ListarFuncionarios() {
 
       {funcionarios &&
         funcionarios.map((funcionario, i) => (
-          <CardFuncionario funcionarios={funcionario} id={i} />
+          <CardFuncionario key={i} funcionarios={funcionario} />
         ))}
 
 
