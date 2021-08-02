@@ -58,7 +58,7 @@ function FormikComponent(props) {
                 <label htmlFor="fotoFuncionario">Foto Funcionario </label>
               </div>
               <input
-                className="form-group my-2"
+                className="form-group"
                 type="file"
                 name="image"
                 onChange={(event) =>
@@ -66,7 +66,7 @@ function FormikComponent(props) {
                 }
               />
             </div>
-            <div className="form-group my-2">
+            <div className="form-group">
               <label htmlFor="registroNome">Full Name</label>
               <Field
                 type="text"
@@ -85,7 +85,7 @@ function FormikComponent(props) {
                 )}
               />
             </div>
-            <div className="form-group my-2">
+            <div className="form-group my-1">
               <label htmlFor="registroEmail">Endereço de email</label>
               <Field
                 type="email"
@@ -105,7 +105,7 @@ function FormikComponent(props) {
                 )}
               />
             </div>
-            <div className="form-group my-2 w-50">
+            <div className="form-group my-1 w-50">
               <label htmlFor="registroDataNascimento">Data de Nascimento</label>
               <Field
                 type="date"
@@ -130,7 +130,7 @@ function FormikComponent(props) {
             </div>
             <h2 className="mt-3">Data de Admissão e Cargo</h2>
             <hr />
-            <div className="form-group my-2 w-50">
+            <div className="form-group my-1 w-50">
               <label htmlFor="registroDataAdmissao">Data de Admissão</label>
               <Field
                 type="date"
@@ -153,7 +153,7 @@ function FormikComponent(props) {
                 )}
               />
             </div>
-            <div className="form-group my-2">
+            <div className="form-group my-1">
               <label htmlFor="registroSetor">Setor</label>
               <Field
                 id="registroSetor"
@@ -179,7 +179,7 @@ function FormikComponent(props) {
                 )}
               />
             </div>
-            <div className="form-group my-2">
+            <div className="form-group my-1">
               <label htmlFor="registroCargo">Cargo</label>
               <Field
                 id="registroCargo"
@@ -205,7 +205,7 @@ function FormikComponent(props) {
                 )}
               />
             </div>
-            <div className="form-group my-2">
+            <div className="form-group my-1">
               <label htmlFor="registroNivel">Nivel</label>
               <Field
                 id="registroNivel"

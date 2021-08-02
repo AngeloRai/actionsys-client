@@ -7,19 +7,22 @@ function ListarFuncionarios() {
   const [funcionarios, setFuncionarios] = useState([]);
   const [filteredFuncionarios, setFilteredFuncionarios] = useState([]);
   const [searchWord, setSearchWord] = useState("");
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     async function buscarFuncionarios() {
       try {
+        setLoading(true)
         const response = await api.get("/funcionarios");
 
         setFuncionarios([...response.data]);
+        setLoading(false)
       } catch (err) {
         console.error(err);
       }
     }
     buscarFuncionarios();
-  }, []);
+  }, [setLoading]);
   
   useEffect(() => {
     async function buscarFuncionarios() {
@@ -43,6 +46,10 @@ function ListarFuncionarios() {
     setSearchWord(event.target.value);
   }
 
+  if (loading === true ) {
+    return <div>LOADING...</div>
+  }
+
   return (
     <div className="row d-flex justify-content-center">
       <div className="form-group mb-4 d-flex justify-content-center">
@@ -60,6 +67,7 @@ function ListarFuncionarios() {
           <div className="d-flex justify-content-center"><CardFuncionario funcionarios={funcionario} id={i} /></div>
         ))}
 
+        
       {funcionarios &&
         funcionarios.map((funcionario, i) => (
           <CardFuncionario key={i} funcionarios={funcionario} />

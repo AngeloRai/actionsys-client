@@ -70,7 +70,7 @@ function ListarUmFuncionario() {
           </Link>
         </div>
         <div className="d-flex justify-content-center w-25">
-          <button className="btn btn-danger  " onClick={() => setShowModal(true)}>
+          <button className="btn btn-danger" onClick={() => setShowModal(true)}>
             Deletar
           </button>
         </div>
