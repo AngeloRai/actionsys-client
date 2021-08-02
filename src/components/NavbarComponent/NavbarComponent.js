@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
-import logo from '../../images/logo.jpg'
+import logo from '../../images/employees.png'
 
 function NavbarComponent() {
   const [expanded, setExpanded] = useState(false);
@@ -26,7 +26,9 @@ function NavbarComponent() {
             src={logo}
             alt="logo"
             className="d-inline-block align-top "
+            style={{maxWidth: "6rem", borderRadius: "6px" }}
           />
+          
         </NavLink>
       </Navbar.Brand>
       <Navbar.Toggle
